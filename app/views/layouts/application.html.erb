@@ -11,6 +11,13 @@
   </head>
 
   <body>
+    <nav class="">
+      <p>nav bar</p>
+      <% if admin_signed_in? %>
+        <%= current_admin.email %>
+      <% end %>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
