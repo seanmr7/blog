@@ -10,7 +10,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="body-color">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <%= link_to "Sean Blog", '/', class: "navbar-brand" %>
       <button 
@@ -30,7 +30,17 @@
         </ul>
       </div>
     </nav>
-
-    <%= yield %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 content-background-color">
+          <div class="col-md-10 offset-md-1">
+            <%= yield %>
+          </div>
+        </div>
+        <div class="col-md-2 offset-md-10 side-bar">
+          sidebar
+        </div>
+      </div>
+    </div>
   </body>
 </html>
