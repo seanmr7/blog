@@ -8,3 +8,7 @@
 
 # Create admin user
 Admin.new({ email: 'admin@example.com', password: 'password', password_confirmation: 'password' }).save
+
+Post.new({ title: 'First Post', body: 'This is my first post on this blog. I\'ve created this blog to document and reflect on my journey and growth as I learn web development. I\'m building this project using Rails 6.1.1 and Ruby 3.0.0. I\'m using Bootstrap 4.6.1 for a front-end framework.', admin_id: 1 }).save
+Project.new({ name: 'Recipe Site', description: 'Collect, store, and share recipes.', url: 'https://cryptic-brushlands-69389.herokuapp.com/', admin_id: 1}).save
+Project.new({ name: 'Blog Site', description: 'A simple blog, portfolio and resume.', url: '', admin_id: 1}).save

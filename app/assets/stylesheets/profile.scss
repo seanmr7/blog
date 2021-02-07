@@ -1,0 +1,35 @@
+// Sidebar profile styles
+
+.profile-image {
+  margin: auto;
+  overflow: hidden;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-border {
+  border-top: 1px solid;
+  border-image: linear-gradient(90deg, #6DEBB5 0%, #C4F5FF 100%) 1;
+}
+
+.profile-blurb {
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.profile-project-list {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-bottom: 0;
+}
+
+.sidebar ul {
+  font-family: 'Roboto', sans-serif;
+  
+  .list-group-item {
+    padding: 0.6rem;
+    border-image: linear-gradient(90deg, #6DEBB5 0%, #C4F5FF 100%) 1;
+  }
+}
