@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<h1>Blog Posts</h1><br>
+<h1>Blog Posts</h1>
 <ul class="list-group list-group-flush">
   <% @posts.reverse_each do |post| %>
     <li class="list-group-item">
@@ -16,13 +16,6 @@
           <div class="col-md-3 align-self-center">
             <span><%= truncate(post.body, length: 60) %></span>
           </div>
-          <!--
-          <%= link_to "Go to post", post %>
-          <% if admin_signed_in? %>
-            <%= link_to 'Edit', edit_post_path(post) %>
-            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-          <% end %>
-          -->
         </div>
       </div>
     </li>

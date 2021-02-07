@@ -7,6 +7,8 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -26,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto p-2">
           <li class="nav-item nav-link">Resume</li>
-          <li class="nav-item nav-link">About</li>
+          <li class="nav-item nav-link"></li>
         </ul>
       </div>
     </nav>
@@ -37,8 +39,13 @@
             <%= yield %>
           </div>
         </div>
-        <div class="col-md-2 offset-md-10 side-bar">
-          sidebar
+        <div class="col-md-2 offset-md-10 sidebar justify-content-center">
+          <%= image_tag("profile-picture/profile-picture.jpg", size: "170x170", class: "rounded-circle profile-image") %>
+          <p class="profile-blurb">
+            Hi, I'm Sean! I work full time as a mechanical engineer 
+            designing commercial plumbing systems. I'm teaching myself 
+            web development with an end goal of changing career paths
+          </p>
         </div>
       </div>
     </div>

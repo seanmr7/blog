@@ -23,12 +23,20 @@
     position: absolute;
   }
 
-  .side-bar {
+  .sidebar {
     height: 100%;
-    position: absolute;
+    position: fixed;
+    overflow: auto;
     background-color: #f8f9fa;
   }
-
+  @media screen and (max-width: 769px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-bottom: 5px;
+    }
+  }
   a {
     color: #212529;
     &:visited{
@@ -43,4 +51,27 @@
 
   .list-group-item {
     background-color: transparent;
+  }
+
+  .profile-image {
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  p, span {
+    font-family: 'Roboto', sans-serif;
+  }
+  .profile-blurb {
+    border-top: 1px solid #6debb5;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #6debb5;
+    margin-bottom: 0;
+  }
+
+  ul li h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
   }
