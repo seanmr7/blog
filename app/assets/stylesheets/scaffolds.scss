@@ -63,3 +63,10 @@ div.actions {
 
 label {
   display: block; }
+
+  .sign-in-link {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
