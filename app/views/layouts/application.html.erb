@@ -29,8 +29,8 @@
         <ul class="navbar-nav ms-auto p-2">
           <li class="nav-item"><%= link_to "Resume", resume_path, class: "nav-link" %></li>
           <% if admin_signed_in? %>
-            <li class="nav-item nav-link">New Post</li>
-            <li class="nav-item nav-link">Add Project</li>
+            <li class="nav-item"><%= link_to "add post", new_post_path, class: "nav-link" %></li>
+            <li class="nav-item nav-link"><%= link_to "add project", new_project_path, class: "nav-link" %></li>
             <li><%= link_to "signout", destroy_admin_session_path, method: :delete, class: "nav-link" %>
           <% end %>
         </ul>
