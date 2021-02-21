@@ -127,25 +127,57 @@
     min-height: 100vh;
     max-width: 75rem;
     padding-left: 10rem;
-  }
+    h1 {
+      font-size: 4.5rem;
+    }
 
-  .resume-about {
-    font-size: 4.5rem;
-  }
+    h2 {
+      font-size: 3.5rem;
+    }
 
-  .resume-section-header {
-    font-size: 3.5rem;
-  }
+    h3 {
+      font-size: 2rem;
+    }
 
+    p {
+      font-size: 1rem;
+      color:rgb(128, 126, 126);
+      line-height: 1.5;
+    }
+    .about-blurb {
+      font-size: 1.15rem;
+    }
+  }
   .resume-subheader {
-    font-size: 1.5rem;
-    color: rgba(110, 110, 110, 0.801);
+    font-size: 1.5rem !important;
+    color: rgb(128, 126, 126);
     a {
-      color: rgba(110, 110, 110, 0.801);
-      
+      color: rgb(128, 126, 126);
+
       &:hover {
-        color: rgb(110, 110, 110);
+        color: rgb(102, 99, 99);
+        text-decoration: underline;
       }
     }
-    
   }
+
+.project-preview {
+  margin-right: 1rem;
+
+  &:hover {
+  transform: scale(1.35);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);;
+  }
+}
+
+.project-description {
+    font-size: 1rem;
+    color:rgb(128, 126, 126);
+    line-height: 1.5;
+}
+
+.work-dates {
+  min-width: 15rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
