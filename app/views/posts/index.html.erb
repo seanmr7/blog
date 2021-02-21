@@ -1,25 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-
-<h1>Blog Posts</h1>
-<ul class="list-group list-group-flush">
-  <% @posts.reverse_each do |post| %>
-    <li class="list-group-item">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-2 align-self-center">
-            <span><%= post.created_at.strftime("%B %d, %Y") %></span>
-          </div>
-          <div class="col-md-7 align-self-center">
-           <h3><%= link_to post.title, post %></h3>
-          </div>
-          <div class="col-md-3 align-self-center">
-            <span><%= truncate(post.body, length: 60) %></span>
-          </div>
-        </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 content-background-color content-top-offset">
+      <div class="col-md-10 offset-md-1">
+        <h1>Blog Posts</h1>
+        <ul class="list-group list-group-flush">
+          <% @posts.reverse_each do |post| %>
+            <li class="list-group-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-2 align-self-center">
+                    <span><%= post.created_at.strftime("%B %d, %Y") %></span>
+                  </div>
+                  <div class="col-md-7 align-self-center">
+                  <h3><%= link_to post.title, post %></h3>
+                  </div>
+                  <div class="col-md-3 align-self-center">
+                    <span><%= truncate(post.body, length: 60) %></span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          <% end %>
+        <ul>
       </div>
-    </li>
-  <% end %>
-<ul>
-
-
+    </div>
+    <%= render "sidebar" %>
+  </div>
+</div>

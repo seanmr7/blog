@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
-
-
-<h1 class="text-center"><%= @post.title %></h1>
-
-
-<p class="post-body">
-  <%= @post.body %>
-</p>
-
-<%= link_to 'Back', root_path %>
-<% if admin_signed_in? %>
-  <%= link_to 'Edit', edit_post_path %>
-<% end %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 content-background-color content-top-offset">
+      <div class="col-md-10 offset-md-1">
+        <h1 class="text-center"><%= @post.title %></h1>
+        <p class="post-body">
+          <%= @post.body %>
+        </p>
+        <%= link_to 'Back', root_path %>
+        <% if admin_signed_in? %>
+          <%= link_to 'Edit', edit_post_path %>
+        <% end %>
+      </div>
+    </div>
+    <%= render "sidebar" %>
+  </div>
+</div>

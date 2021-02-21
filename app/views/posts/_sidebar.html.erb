@@ -1,0 +1,24 @@
+<div class="col-md-2 offset-md-10 sidebar justify-content-center content-top-offset">
+  <%= image_tag("profile-picture/profile-picture.jpg", size: "170x170", class: "rounded-circle profile-image") %>
+  <p class="profile-blurb profile-border">
+    Hi, I'm Sean! I work full time as a mechanical engineer 
+    designing commercial plumbing systems. I'm teaching myself 
+    web development with an end goal of changing careers.
+  </p>
+  <p class="profile-project-list text-center profile-border">
+    Recent Projects
+  </p>
+  <ul class="list-group list-group-flush profile-border">
+    <% @projects.each do |project| %>
+      <li class="list-group-item profile-border">
+      <%= link_to project.name, project.url %> |
+      <%= project.description %>
+      <% if admin_signed_in? %>
+        <%= link_to "edit", edit_project_path(project) %>
+      <% end %>
+      </li>
+    <% end %>
+  </ul>
+  <p class="profile-project-list text-center"><%= link_to "View the rest of my projects here", "https://github.com/seanmr7" %>
+  <%= link_to "sign-in", admin_session_path, class: "sign-in-link" %>
+</div>
