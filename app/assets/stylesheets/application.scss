@@ -127,8 +127,10 @@
     min-height: 100vh;
     max-width: 75rem;
     padding-left: 10rem;
+    font-family: 'Roboto Condensed', sans-serif;
     h1 {
       font-size: 4.5rem;
+      
     }
 
     h2 {
@@ -139,15 +141,18 @@
       font-size: 2rem;
     }
 
-    p {
+    p, li {
       font-size: 1rem;
+      font-weight: 500;
       color:rgb(128, 126, 126);
       line-height: 1.5;
+      padding-left: 0;
     }
     .about-blurb {
       font-size: 1.15rem;
     }
   }
+
   .resume-subheader {
     font-size: 1.5rem !important;
     color: rgb(128, 126, 126);
@@ -172,6 +177,7 @@
 
 .project-description {
     font-size: 1rem;
+    font-weight: 500;
     color:rgb(128, 126, 126);
     line-height: 1.5;
 }
@@ -180,4 +186,8 @@
   min-width: 15rem;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+a.nav-link.resume-nav {
+  color: #403e3ec7;
 }
