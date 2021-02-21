@@ -118,7 +118,7 @@
 
     li {
       font-size: 1rem;
-      font-weight: 800;
+      font-weight: 900;
       padding: 0.5rem;
     }
   }
@@ -141,9 +141,8 @@
       font-size: 2rem;
     }
 
-    p, li {
+    p, li, span {
       font-size: 1rem;
-      font-weight: 500;
       color:rgb(128, 126, 126);
       line-height: 1.5;
       padding-left: 0;
@@ -175,19 +174,9 @@
   }
 }
 
-.project-description {
-    font-size: 1rem;
-    font-weight: 500;
-    color:rgb(128, 126, 126);
-    line-height: 1.5;
-}
-
 .work-dates {
   min-width: 15rem;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-a.nav-link.resume-nav {
-  color: #403e3ec7;
-}
