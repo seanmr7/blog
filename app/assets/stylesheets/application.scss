@@ -65,6 +65,12 @@
     background-color: transparent;
   }
 
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    &:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
 
   p, span {
     font-family: 'Roboto', sans-serif;
